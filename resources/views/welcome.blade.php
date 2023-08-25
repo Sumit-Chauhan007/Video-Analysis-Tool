@@ -250,7 +250,7 @@
     <audio id="recorder" muted hidden></audio>
     <audio id="player" controls></audio>
     <video width="320" height="240" controls>
-        <source src="video/test1_6989.mp4" type="video/mp4">
+        <source src="video/test1_3233.mp4" type="video/mp4">
       </video>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"

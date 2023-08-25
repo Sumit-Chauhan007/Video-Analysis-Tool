@@ -29,8 +29,7 @@ class SaveController extends Controller
         
         $audios = escapeshellarg($audio);
 // dd($audios,$file);
-        $convert = 'ffmpeg -r 1 -loop 1 -i ' . $file . ' -i ' . $audios . ' -acodec copy -r 1 -shortest -vf scale=1280:720 ' . public_path("video/" . $video);
-
+$convert = "ffmpeg -r 1 -loop 1 -i $file -i $audios -acodec copy -r 1 -shortest -vf scale=1280:720 " . public_path("video/$video");
         exec($convert);
         exec($convert, $output, $return_var);
         error_log("Command to execute: " . $convert);
